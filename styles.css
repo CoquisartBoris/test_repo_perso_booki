@@ -71,6 +71,81 @@ h3 {
     margin-left: 55px;
 }
 
+/* partie main hébergements à Marseille + les plus populaires*/
+
+/* div hébergement*/
+.boxHeb {
+    background: #F2F2F2;
+    width: 880px;
+    height: 626px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* div les plus populaires*/
+.boxPop {
+    background: #F2F2F2;
+    Width: 420px;
+    Height: 625px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* titre hebergements*/
+.titreHebMarseille {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 4%;
+    width: 100%;
+}
+
+/* titre les plus populaires */
+.titrePlusPopulaires {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 10%;
+}
+
+/* les 3 les plus populaires*/
+.popArticlesBox {
+    width: 343px;
+    height: 144px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+/* les 6 hébergements*/
+
+.hebergementsBox {
+    width: 246px;
+    height: 199px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hebAfficherPlus {
+    width: 100%;
+    margin-left: 5%;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
 /* partie main activité a marseille*/
 /*
 .sizeBoxAct {
