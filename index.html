@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
     <title>Booki</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -26,23 +27,64 @@
     </header>
 
     <main>
+        <!-- partie filtres -->
+        <div class="boxFiltres">
+            <div class="filterTittle">
+                <a href="#">Filtres</a>
+            </div>
+            <div class="borderFilter">
+                <i class="fa-solid fa-money-bill-wave logoFiltre"></i><a href="#">Economique</a>
+            </div>
+            <div class="borderFilter">
+                <i class="fa-solid fa-person logoFiltre"></i><a href="#">Familial</a>
+            </div>
+            <div class="borderFilter">
+                <i class="fa-solid fa-heart logoFiltre"></i><a href="#">Romantique</a>
+            </div>
+            <div class="borderFilter">
+                <i class="fa-solid fa-dog logoFiltre"></i><a href="#">Animaux autorisés</a>
+            </div>
+
+        </div>
+        <div class="infoIcon">
+            <div class="parentIcon flexAround"><i class="fa-solid fa-info"></i></div>
+            <p class="nbrLogements">Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
         <!-- partie hébergement à Marseille + Les plus populaires -->
         <div class="flexAround"><!--div qui englobe hebergements Marseille + les plus populaires -->
             <div class="boxHeb"><!-- div hébergement -->
                 <h3 class="titreHebMarseille">Hébergements à Marseille</h3>
-                <div class="hebergementsBox"></div>
-                <div class="hebergementsBox"></div>
-                <div class="hebergementsBox"></div>
-                <div class="hebergementsBox"></div>
-                <div class="hebergementsBox"></div>
-                <div class="hebergementsBox"></div>
+                <div class="hebergementsBox">
+                    <div><img class="sizePictHeb" src="./images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière" width="236" height="124"></div>
+                </div>
+                <div class="hebergementsBox">
+                    <div><img class="sizePictHeb" src="./images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du Port" width="236" height="124"></div>
+                </div>
+                <div class="hebergementsBox">
+                    <div><img class="sizePictHeb" src="./images/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hotel les Mouettes" width="236" height="124"></div>
+                </div>
+                <div class="hebergementsBox">
+                    <div><img class="sizePictHeb" src="./images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la Mer" width="236" height="124"></div>
+                </div>
+                <div class="hebergementsBox">
+                    <div><img class="sizePictHeb" src="./images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" width="236" height="124"></div>
+                </div>
+                <div class="hebergementsBox">
+                    <div><img class="sizePictHeb" src="./images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel cchez Amina" width="236" height="124"></div>
+                </div>
                 <h4 class="hebAfficherPlus">Afficher plus</h4>
             </div>
             <div class="boxPop"><!-- les plus populaires -->
-                <h3 class="titrePlusPopulaires">Les plus populaires</h3>
-                <div class="popArticlesBox"></div>
-                <div class="popArticlesBox"></div>
-                <div class="popArticlesBox"></div>
+                <h3 class="titrePlusPopulaires flexBetween">Les plus populaires<i class="fa-solid fa-chart-line logoPlusPop"></i></h3>
+                <div class="popArticlesBox">
+                    <div><img class="sizePictPop" src="./images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hotel le soleil du matin" width="137" height="135"></div>
+                </div>
+                <div class="popArticlesBox">
+                    <div><img class="sizePictPop" src="./images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre d'hote au copeur de l'eau" width="137" height="135"></div>
+                </div>
+                <div class="popArticlesBox">
+                    <div><img class="sizePictPop" src="./images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hotel Bleu et Blanc" width="137" height="135"></div>
+                </div>
             </div>
         </div>
         <!-- partie titre activité a marseille + photos + lieux-->
