@@ -96,7 +96,7 @@ h5 {
 .boxFiltres {
     margin-left: 3.5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -144,7 +144,7 @@ h5 {
     height: 20px;
     border: 2px solid  #F2F2F2;
     border-radius: 25px;
-    margin-right: 5px;
+    
 }
 
 .nbrLogements {
@@ -157,8 +157,9 @@ h5 {
 
 /* div hébergement*/
 .boxHeb {
+    margin-left: 5%;
     background: #F2F2F2;
-    width: 880px;
+    width: 80%;
     height: 626px;
     border-radius: 20px;
     display: flex;
@@ -168,11 +169,12 @@ h5 {
 /* div les plus populaires*/
 .boxPop {
     background: #F2F2F2;
-    Width: 420px;
+    Width: auto;
     Height: 625px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    margin-right: 5%;
 }
 
 /* titre hebergements*/
@@ -354,5 +356,13 @@ h5 {
     }
     h3 {
         margin-left: 7%;
+    }
+    .mobileAct {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sizeFooter {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
