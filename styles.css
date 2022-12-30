@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Raleway';
+    font-style: normal;
 }
 
 /* Center éléments au millieu*/
@@ -34,14 +35,21 @@ body {
     margin-top: 48px;
 }
 
+
 /* couleur lien hebergements*/
 .colorHeb {
+    color: #000000;
+}
+.colorHeb:hover {
     color: #0065FC;
 }
 
-/* coueleur lien activités*/
+/* couleur lien activités*/
 .colorAct {
-    color: black;
+    color: #000000;
+}
+.colorAct:hover {
+    color: #0065FC;
 }
 /*définition taille + placement logo header*/
 .logoBooki {
@@ -54,7 +62,6 @@ body {
 h1 {
     margin-top: 80px;
     margin-left: 55px;
-    font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
@@ -62,13 +69,27 @@ h1 {
 
 /* placement + taille sous-titre*/
 h3 {
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     margin-top: 8px;
     margin-left: 55px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
 }
 
 /* filtres display*/
@@ -77,12 +98,10 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 65%;
+    flex-wrap: wrap;
 }
 
 .filterTittle a {
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
@@ -91,11 +110,15 @@ h3 {
 /* bordures grises filtres */
 .borderFilter {
     padding-top: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 10px;
     border: 2px solid  #F2F2F2;
     border-radius: 25px;
+}
+
+.borderFilter a {
+    color: black;
 }
 
 /* Filtres logos*/
@@ -125,8 +148,6 @@ h3 {
 }
 
 .nbrLogements {
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -156,8 +177,6 @@ h3 {
 
 /* titre hebergements*/
 .titreHebMarseille {
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
@@ -172,8 +191,6 @@ h3 {
 
 /* titre les plus populaires */
 .titrePlusPopulaires {
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
@@ -191,6 +208,10 @@ h3 {
     margin-bottom: auto;
 }
 
+.tittlePopArticles {
+    display: flex;
+}
+
 /* placement + couleur logo partie les plus populaires*/
 .logoPlusPop {
     margin-right: 10%;
@@ -204,8 +225,12 @@ h3 {
     border-bottom-left-radius: 20px;
 }
 
-/* les 6 hébergements*/
+.prixNuitPop {
+    margin-left: 7.5%;
+}
 
+
+/* les 6 hébergements*/
 .hebergementsBox {
     width: 246px;
     height: 199px;
@@ -215,11 +240,32 @@ h3 {
     margin-right: auto;
 }
 
+/* definition placement et taille des hébergements à Marseille */
+.sousTitresHebergements {
+    display: flex;
+    justify-content: baseline;
+    margin-top: auto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+/* prixHébergements */
+.prixHebergements {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-left: 6%;
+    margin-top: -20px;
+}
+
 .hebAfficherPlus {
     width: 100%;
     margin-left: 5%;
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
@@ -243,8 +289,6 @@ h3 {
     background-color: white;
     width: 300px;
     height: 56px;
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
@@ -269,8 +313,7 @@ h3 {
 
 /* taille + couleur titres du Footer */
 .tittleFooter a {
-    font-family: 'Raleway';
-    font-style: normal;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 50px;
@@ -283,3 +326,33 @@ h3 {
     line-height: 25px;
 }
 
+@media screen and (max-width: 500px) {
+    .flexBetween {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .flexAround {
+        display: flex;
+        width: 100%;
+    }
+    .logoBooki {
+        display: flex;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .filterTittle {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .boxFiltres {
+        display: flex;
+        justify-content: flex-start;
+    }
+    h1 {
+        margin-left: 7%;
+    }
+    h3 {
+        margin-left: 7%;
+    }
+}
