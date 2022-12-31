@@ -2,40 +2,33 @@
     text-decoration: none;
     list-style: none;
 }
-
 body {
     font-family: 'Raleway';
     font-style: normal;
 }
-
 /* Center éléments au millieu*/
 .flexCenter {
     display: flex;
     align-content: center;
     align-items: center;
 }
-
 /* espacer éléments*/
 .flexAround {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 /* espacer éléments sans marge extérieure */
 .flexBetween {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 /* espacements entre les Liens*/
 .sizeLiens {
     width: 25%;
     margin-top: 48px;
 }
-
-
 /* couleur lien hebergements*/
 .colorHeb {
     color: #000000;
@@ -43,7 +36,6 @@ body {
 .colorHeb:hover {
     color: #0065FC;
 }
-
 /* couleur lien activités*/
 .colorAct {
     color: #000000;
@@ -57,7 +49,6 @@ body {
     height: 19px;
     margin-left: 55px;
 }
-
 /* placement + taille titre */
 h1 {
     margin-top: 80px;
@@ -66,7 +57,6 @@ h1 {
     font-size: 22px;
     line-height: 26px;
 }
-
 /* placement + taille sous-titre*/
 h3 {
     font-weight: 400;
@@ -75,7 +65,6 @@ h3 {
     margin-top: 8px;
     margin-left: 55px;
 }
-
 h4 {
     font-weight: 700;
     font-size: 16px;
@@ -84,23 +73,21 @@ h4 {
     margin-left: 15px;
     margin-right: 20px;
 }
-
 h5 {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     color: #000000;
 }
-
 /* filtres display*/
 .boxFiltres {
+    margin-top: 2.5%;
     margin-left: 3.5%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 }
-
 .filterTittle a {
     font-weight: 700;
     font-size: 18px;
@@ -116,18 +103,14 @@ h5 {
     border: 2px solid  #F2F2F2;
     border-radius: 25px;
 }
-
 .borderFilter a {
     color: black;
 }
-
 /* Filtres logos*/
 .logoFiltre {
     margin-right: 10px;
     color: #0065FC;
 }
-
-
 /* partie sous titre + logo infos*/
 .infoIcon {
     display: flex;
@@ -136,7 +119,6 @@ h5 {
     margin-top: 25px;
     margin-bottom: 25px;
 }
-
 /* cercle du logo servant à centrer logo info*/
 .parentIcon {
     color: #0065FC;
@@ -146,24 +128,52 @@ h5 {
     border-radius: 25px;
     
 }
-
 .nbrLogements {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
 }
-
 /* barre de recherche */
 /* placement barre de recherche */
+.boxSearchIcon {
+    width: 14px;
+    height: 18px;
+}
 .boxSearch {
     display: flex;
     justify-content:flex-start;
     align-items: center;
     margin-left: 4%;
+    height: 49px;
+    width: 300px;
+    
 }
-
+.boxSearch1 {
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxSearch2 {
+    background-color: #FFFFFF;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+.boxSearch3 {
+    width: 130px;
+    height: 49px;
+    background-color: #0065FC;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 15px 15px 0px;
+}
 /* partie main hébergements à Marseille + les plus populaires*/
-
 /* div hébergement*/
 .boxHeb {
     margin-left: 5%;
@@ -174,7 +184,6 @@ h5 {
     display: flex;
     flex-wrap: wrap;
 }
-
 /* div les plus populaires*/
 .boxPop {
     background: #F2F2F2;
@@ -185,7 +194,6 @@ h5 {
     flex-direction: column;
     margin-right: 5%;
 }
-
 /* titre hebergements*/
 .titreHebMarseille {
     font-weight: 700;
@@ -194,12 +202,10 @@ h5 {
     margin-top: 4%;
     width: 100%;
 }
-
 .sizePictHeb {
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
 }
-
 /* titre les plus populaires */
 .titrePlusPopulaires {
     font-weight: 700;
@@ -207,7 +213,6 @@ h5 {
     line-height: 26px;
     margin-top: 10%;
 }
-
 /* les 3 les plus populaires*/
 .popArticlesBox {
     width: 343px;
@@ -218,29 +223,23 @@ h5 {
     margin-right: auto;
     margin-bottom: auto;
 }
-
 .tittlePopArticles {
     display: flex;
 }
-
 /* placement + couleur logo partie les plus populaires*/
 .logoPlusPop {
     margin-right: 10%;
     color: #0065FC;
 }
-
 /* définition forme images les plus populaires*/
 .sizePictPop {
     border: 5px solid #FFFFFF;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-
 .prixNuitPop {
     margin-left: 7.5%;
 }
-
-
 /* les 6 hébergements*/
 .hebergementsBox {
     width: 246px;
@@ -250,7 +249,6 @@ h5 {
     margin-left: auto;
     margin-right: auto;
 }
-
 /* definition placement et taille des hébergements à Marseille */
 .sousTitresHebergements {
     display: flex;
@@ -261,7 +259,6 @@ h5 {
     line-height: 19px;
     color: #000000;
 }
-
 /* prixHébergements */
 .prixHebergements {
     display: flex;
@@ -273,7 +270,6 @@ h5 {
     margin-left: 6%;
     margin-top: -20px;
 }
-
 .hebAfficherPlus {
     width: 100%;
     margin-left: 5%;
@@ -281,20 +277,10 @@ h5 {
     font-size: 18px;
     line-height: 21px;
 }
-
-/* partie main activité a marseille*/
-/*
-.sizeBoxAct {
-
-}
-*/
-
 .sizePictAct {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
-
 /* défini taille + forme sous titres photos activités + box*/
 .sizeTittlesAct {
     background-color: white;
@@ -310,9 +296,6 @@ h5 {
     border-bottom-right-radius: 20px;
     text-align: center;
 }
-
-/* Footer*/
-
 /* placement + taille + background footer */
 .sizeFooter {
     position: absolute;
@@ -321,7 +304,6 @@ h5 {
     background: #F2F2F2;
     height: 225px;
 }
-
 /* taille + couleur titres du Footer */
 .tittleFooter a {
 
@@ -341,7 +323,6 @@ h5 {
     justify-content: space-around;
     align-items: center;
 }
-
 @media screen and (max-width: 500px) {
     .flexBetween {
         display: flex;
