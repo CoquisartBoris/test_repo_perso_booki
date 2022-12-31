@@ -153,6 +153,15 @@ h5 {
     line-height: 19px;
 }
 
+/* barre de recherche */
+/* placement barre de recherche */
+.boxSearch {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-left: 4%;
+}
+
 /* partie main hébergements à Marseille + les plus populaires*/
 
 /* div hébergement*/
@@ -362,7 +371,17 @@ h5 {
         flex-wrap: wrap;
     }
     .sizeFooter {
+        height: auto;
+        width: auto;
+    }
+    .test {
         display: flex;
+        align-items:center;
         flex-wrap: wrap;
+    }
+    .boxSearch {
+        display: flex;
+        justify-content:center;
+        align-items: center;
     }
 }
