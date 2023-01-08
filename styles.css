@@ -50,6 +50,7 @@ body {
     width: 61.09px;
     height: 19px;
     margin-left: 55px;
+    margin-top: 44px;
 }
 /* placement + taille titre */
 h1 {
@@ -136,10 +137,12 @@ h5 {
     border-radius: 25px;
     
 }
+.infoSize {
+    margin-left: 7px;
+}
 .nbrLogements {
-    font-weight: 400;
-    font-size: 16px;
     line-height: 19px;
+    margin-left: 11px;
 }
 /* barre de recherche */
 /* placement barre de recherche */
@@ -196,9 +199,10 @@ input:focus {
 /* partie main hébergements à Marseille + les plus populaires*/
 /* div hébergement*/
 .boxHeb {
-    margin-left: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
     background: #F2F2F2;
-    width: 90%;
+    width: auto;
     height: 625px;
     border-radius: 20px;
     display: flex;
@@ -207,36 +211,29 @@ input:focus {
 /* div les plus populaires*/
 .boxPop {
     background: #F2F2F2;
-    Width: 420px;
+    Width: auto;
     Height: 625px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 50px;
+    margin-right: 3%;
 }
 /* titre hebergements*/
 .titreHebMarseille {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
     margin-top: 4%;
     width: 100%;
 }
 .sizePictHeb {
-    border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
 }
 /* titre les plus populaires */
 .titrePlusPopulaires {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
     margin-top: 10%;
 }
 /* les 3 les plus populaires*/
 .popArticlesBox {
-    width: 343px;
+    width: 100%;
     height: 144px;
     background-color: white;
     border-radius: 20px;
@@ -264,30 +261,25 @@ input:focus {
 }
 /* les 6 hébergements*/
 .hebergementsBox {
-    width: 246px;
+    width: 30%;
     height: 199px;
     background-color: white;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
+    border: 5px solid #FFFFFF;
 }
 /* definition placement et taille des hébergements à Marseille */
 .sousTitresHebergements {
     display: flex;
     justify-content: baseline;
     margin-top: auto;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
     color: #000000;
 }
 /* prixHébergements */
 .prixHebergements {
     display: flex;
     justify-content: flex-start;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
     color: #000000;
     margin-left: 6%;
     margin-top: -20px;
@@ -318,24 +310,47 @@ input:focus {
     font-size: 18px;
     line-height: 21px;
 }
+.sizeBoxAct {
+    height: 389px;
+    width: 100%;
+}
 .sizePictAct {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    height: 100%;
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+}
+.imgVieuxPort { 
+    background: url(./images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+}
+.imgPomegues {
+    background: url(./images/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+}
+.imgCalanques {
+    background: url(./images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+}
+.imgNotreDame {
+    background: url(./images/florian-wehde-xW9e8gdotxI-unsplash.jpg);
 }
 /* défini taille + forme sous titres photos activités + box*/
 .sizeTittlesAct {
     background-color: white;
-    width: 300px;
-    height: 56px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+    width: 85%;
+    height: 35px;
     color: #000000;
+    margin-top: 0;
+    margin-left: 0;
+    padding-top: 20px;
+    padding-left: 5%;
     box-shadow: 3px 2px 2px  #F2F2F2;
-    margin-bottom: 60px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    text-align: center;
+    
+}
+.mobileAct {
+    margin-left: 2.5%;
 }
 /* placement + taille + background footer */
 .sizeFooter {
@@ -344,6 +359,7 @@ input:focus {
     right: 3.68%;
     background: #F2F2F2;
     height: 225px;
+    margin-top: 150px;
 }
 /* taille + couleur titres du Footer */
 .tittleFooter a {
@@ -357,7 +373,7 @@ input:focus {
     color: black;
     line-height: 25px;
 }
-.flexAroundFooter {
+.flexStartFooter {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -366,8 +382,11 @@ input:focus {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-right: 2.5%;
 }
-@media screen and (max-width: 500px) {
+
+/* mobile */
+@media screen and (max-width: 767px) {
     .flexBetween {
         display: flex;
         flex-direction: column;
@@ -400,6 +419,12 @@ input:focus {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        max-width: auto;
+    }
+    .sizeBoxAct {
+        margin-bottom: 100px;
+        height: 200px;
+        max-width: 80%;
     }
     .sizeFooter {
         height: auto;
@@ -422,7 +447,7 @@ input:focus {
         flex-wrap:wrap-reverse;
     }
     .boxPop {
-        width: 375px;
+        width: 100%;
         border-radius: 0px 0px 0px 0px;
         margin-right: 0;
     }
@@ -433,6 +458,7 @@ input:focus {
     .hebergementsBox {
         margin-bottom: 10px;
         box-shadow: 3px 2px 2px  #F2F2F2;
+        width: 75%;
     }
     .borderFilter {
         margin-right: 0;
@@ -440,20 +466,25 @@ input:focus {
     .filterTittle {
         margin-right: 0;
     }
-    .flexAroundFooter {
+    .flexStartFooter {
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
+    .hebAfficherPlus {
+        display: none;
+    }
 }
-@media screen and (min-width: 501px) and (max-width: 1310px) {
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .boxHeb {
+        margin-bottom: 5%;
+    }
     .boxPop {
         display: flex;
-        justify-content: space-around;
         align-items: center;
-        margin-top: 5%;
-        margin-right: 0;
-        width: 100%;
+        margin: auto;
+        width: 90%;
         height: 280px;
         flex-direction: row;
         flex-wrap: wrap;
@@ -471,5 +502,12 @@ input:focus {
     .popArticlesBox {
         height: 144px;
         width: 252px;
+    }
+    .sizeBoxAct {
+        height: 267px;
+        width: 182px;
+    }
+    .sizeTittlesAct {
+        width: 85%;
     }
 }
