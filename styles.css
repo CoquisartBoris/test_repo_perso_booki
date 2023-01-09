@@ -226,6 +226,9 @@ input:focus {
     margin-top: 4%;
     width: 100%;
 }
+.titreHebMarseille a{
+    color: #000000;
+}
 .sizePictHeb {
     border-radius: 20px 20px 0px 0px;
 }
@@ -234,6 +237,9 @@ input:focus {
     margin-top: 10%;
     margin-left: 7.5%;
     margin-bottom: 20px;
+}
+.titrePlusPopulaires a {
+    color: #000000;
 }
 /* les 3 les plus populaires*/
 .popArticlesBox {
@@ -247,6 +253,9 @@ input:focus {
 }
 .tittlePopArticles {
     display: flex;
+}
+.tittlePopArticles a {
+    color: #000000;
 }
 /* placement + couleur logo partie les plus populaires*/
 .logoPlusPop {
@@ -290,15 +299,19 @@ input:focus {
     display: flex;
     justify-content: baseline;
     margin-top: auto;
+}
+.sousTitresHebergements a {
     color: #000000;
 }
 /* prixHébergements */
 .prixHebergements {
     display: flex;
     justify-content: flex-start;
-    color: #000000;
     margin-left: 5%;
     margin-top: -20px;
+}
+.prixHebergements a {
+    color: #000000;
 }
 /* placements logo étoiles */
 .cardTextPop {
@@ -334,6 +347,9 @@ input:focus {
     font-size: 18px;
     line-height: 21px;
 }
+.hebAfficherPlus a{
+    color: #000000;
+}
 .sizeBoxAct {
     height: 389px;
     width: 100%;
@@ -363,7 +379,6 @@ input:focus {
     background-color: white;
     width: 85%;
     height: 35px;
-    color: #000000;
     margin-top: 0;
     margin-left: 0;
     padding-top: 20px;
@@ -373,6 +388,9 @@ input:focus {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     
+}
+.sizeTittlesAct a {
+    color: #000000;
 }
 .mobileAct {
     margin-left: 2.5%;
