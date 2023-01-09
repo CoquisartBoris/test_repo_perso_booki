@@ -213,6 +213,7 @@ input:focus {
 .boxPop {
     background: #F2F2F2;
     Width: auto;
+    min-width: 350px;
     Height: 625px;
     border-radius: 20px;
     display: flex;
@@ -221,6 +222,7 @@ input:focus {
 }
 /* titre hebergements*/
 .titreHebMarseille {
+    margin-left: 2.5%;
     margin-top: 4%;
     width: 100%;
 }
@@ -230,7 +232,8 @@ input:focus {
 /* titre les plus populaires */
 .titrePlusPopulaires {
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 7.5%;
+    margin-bottom: 20px;
 }
 /* les 3 les plus populaires*/
 .popArticlesBox {
@@ -294,12 +297,12 @@ input:focus {
     display: flex;
     justify-content: flex-start;
     color: #000000;
-    margin-left: 6%;
+    margin-left: 5%;
     margin-top: -20px;
 }
 /* placements logo étoiles */
 .cardTextPop {
-    min-width: 150px;
+    min-width: 140px;
 }
 .starIconDisplayHeb {
     display: flex;
