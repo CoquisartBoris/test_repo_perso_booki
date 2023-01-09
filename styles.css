@@ -2,10 +2,15 @@
     text-decoration: none;
     list-style: none;
 }
+a {
+    color: #000000;
+}
 /* test github */
 body {
     font-family: 'Raleway';
     font-style: normal;
+    max-width: 1400px;
+    margin: auto;
 }
 /* Center éléments au millieu*/
 .flexCenter {
@@ -28,13 +33,14 @@ body {
 /* espacements entre les Liens*/
 .sizeLiens {
     width: 25%;
-    padding-top: 48px;
+    
 }
 /* couleur lien hebergements*/
 .colorHeb {
     color: #000000;
 }
 .colorHeb:hover {
+    padding-top: 20px;
     color: #0065FC;
     border-top: 2px solid #0065FC;
 }
@@ -168,8 +174,7 @@ input:focus {
 }
 .boxSearch1 {
     background-color: #F2F2F2;
-    width: 50px;
-    height: 49px;
+    padding: 10px;
     border-radius: 15px 0px 0px 15px;
     display: flex;
     align-items: center;
@@ -179,12 +184,12 @@ input:focus {
     background-color: #FFFFFF;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .boxSearch3 {
-    width: 130px;
-    height: 49px;
+    padding: 10px;
+
     background-color: #0065FC;
     color: #FFFFFF;
     display: flex;
@@ -204,28 +209,26 @@ input:focus {
     margin-right: 3%;
     background: #F2F2F2;
     width: auto;
-    height: 625px;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
 }
 /* div les plus populaires*/
-.boxPop {
+.backgroundHeb {
     background: #F2F2F2;
-    Width: auto;
+    Width: 100%;
     min-width: 350px;
-    Height: 625px;
     border-radius: 20px;
+}
+.boxPop {
+    border-radius: 20px;
+    background: #F2F2F2;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 /* titre hebergements*/
-.titreHebMarseille {
-    margin-left: 2.5%;
-    margin-top: 4%;
-    width: 100%;
-}
+
 .titreHebMarseille a{
     color: #000000;
 }
@@ -341,14 +344,9 @@ input:focus {
     margin-right: 7px;
 }
 .hebAfficherPlus {
-    width: 100%;
-    margin-left: 5%;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-}
-.hebAfficherPlus a{
-    color: #000000;
 }
 .sizeBoxAct {
     height: 389px;
@@ -392,14 +390,8 @@ input:focus {
 .sizeTittlesAct a {
     color: #000000;
 }
-.mobileAct {
-    margin-left: 2.5%;
-}
 /* placement + taille + background footer */
 .sizeFooter {
-    position: absolute;
-    left: 3.33%;
-    right: 3.68%;
     background: #F2F2F2;
     height: 225px;
     margin-top: 150px;
@@ -424,12 +416,13 @@ input:focus {
 .testheb {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-right: 2.5%;
 }
 
 /* mobile */
 @media screen and (max-width: 767px) {
+    .boxSearch3 span{
+        display: none;
+    }
     .flexBetween {
         display: flex;
         flex-direction: column;
@@ -586,5 +579,11 @@ input:focus {
     .sizeTittlesAct {
         width: 85%;
         padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .boxSearch3 i {
+        display: none;
     }
 }
