@@ -27,7 +27,7 @@ body {
 /* espacements entre les Liens*/
 .sizeLiens {
     width: 25%;
-    margin-top: 48px;
+    padding-top: 48px;
 }
 /* couleur lien hebergements*/
 .colorHeb {
@@ -188,7 +188,7 @@ input:focus {
     color: #FFFFFF;
     display: flex;
     align-items: center;
-    padding-left: 15px;;
+    padding-left: 15px;
     border-radius: 0px 15px 15px 0px;
     font-family: 'Raleway';
     font-style: normal;
@@ -217,7 +217,6 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 3%;
 }
 /* titre hebergements*/
 .titreHebMarseille {
@@ -256,9 +255,11 @@ input:focus {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+.sousTitresPop {
+    margin: 7.5% 0;
+}
 .prixNuitPop {
-    margin-left: 7.5%;
-    margin-bottom: 15%;
+    margin: 7.5% 0;
 }
 /* les 6 hébergements*/
 .hebergementsBox {
@@ -286,10 +287,15 @@ input:focus {
     margin-top: -20px;
 }
 /* placements logo étoiles */
-.starIconDisplay {
+.starIconDisplayHeb {
     display: flex;
-    margin-top: -20px;
+    margin-top: -5px;
     margin-left: 15px;
+}
+.starIconDisplayPop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 /* taille + couleurs logo étoiles*/
 .starIconStyle {
@@ -403,6 +409,18 @@ input:focus {
         margin-top: 20px;
         margin-left: 0px;
     }
+    .boxSearch3Mobile {
+        width: 49px;
+        height: 49px;
+        background-color: #0065FC;
+        border-radius: 0px 15px 15px 0px;
+    }
+    .boxSearch3MobileIcon {
+        color: #FFFFFF;
+        display: flex;
+        margin-top: 16px;
+        margin-left: 16px;
+    }
     .filterTittle {
         width: 100%;
         margin-bottom: 20px;
@@ -451,7 +469,10 @@ input:focus {
     .boxPop {
         width: 100%;
         border-radius: 0px 0px 0px 0px;
-        margin-right: 0;
+    }
+    .titrePlusPopulaires {
+        display: flex;
+        flex-direction: row;
     }
     .boxHeb {
         height: 100%;
@@ -461,10 +482,20 @@ input:focus {
         margin-bottom: 10px;
         box-shadow: 3px 2px 2px  #F2F2F2;
         width: 100%;
-        max-width: 65%;
+        max-width: 390px;
+    }
+    .boxFiltres {
+        display: flex;
+        justify-content: center;
     }
     .borderFilter {
-        margin-right: 0;
+        justify-content: flex-start;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-bottom: 2.5%;
+        width: 26%;
+        min-width: 120px;
+        font-size: 11px;
     }
     .filterTittle {
         margin-right: 0;
