@@ -34,12 +34,7 @@ body {
 .sizeLiens {
     width: 25%;
 }
-.colorHeb:hover {
-    padding-top: 47px;
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
-}
-.colorAct:hover {
+.animLiens:hover {
     padding-top: 47px;
     color: #0065FC;
     border-top: 2px solid #0065FC;
@@ -372,6 +367,14 @@ input:focus {
 
 /* mobile */
 @media screen and (max-width: 767px) {
+    .sizeLiens {
+        margin-bottom: 7.5%;
+    }
+    .animLiens:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 20px;
+    }
     .boxSearch3 span{
         display: none;
     }
