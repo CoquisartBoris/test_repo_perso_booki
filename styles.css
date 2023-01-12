@@ -183,6 +183,9 @@ input:focus {
     min-width: 350px;
     border-radius: 20px;
 }
+.titreHebMarseille {
+    padding-left: 2.5%;
+}
 .boxPop {
     border-radius: 20px;
     background: #F2F2F2;
@@ -300,6 +303,7 @@ input:focus {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
+    padding-left: 2.5%;
 }
 .sizeBoxAct {
     height: 389px;
@@ -438,6 +442,9 @@ input:focus {
         width: 100%;
         border-radius: 0px 0px 0px 0px;
     }
+    .popArticlesBox {
+        margin-bottom: 2.5%;
+    }
     .titrePlusPopulaires {
         display: flex;
         flex-direction: row;
@@ -483,7 +490,8 @@ input:focus {
         margin: auto;
     }
     .backgroundHeb {
-        width: 100%;
+        width: 95%;
+        margin-bottom: 2.5%;
     }
     .boxHeb {
         margin-bottom: 5%;
@@ -499,7 +507,7 @@ input:focus {
     }
     .titrePlusPopulaires {
         width: 100%;
-        margin-top: 0;
+        margin: 0% 0% 0% 3.5%;
     }
     .testheb {
         display: flex;
