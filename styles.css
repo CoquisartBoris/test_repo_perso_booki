@@ -373,10 +373,13 @@ input:focus {
     .animLiens:hover {
         border-top: none;
         border-bottom: 2px solid #0065FC;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     .boxSearch3 span{
         display: none;
+    }
+    .boxSearch3 {
+        padding-bottom: 13px;
     }
     .flexBetween {
         display: flex;
@@ -391,18 +394,6 @@ input:focus {
         display: flex;
         margin-top: 20px;
         margin-left: 0px;
-    }
-    .boxSearch3Mobile {
-        width: 49px;
-        height: 49px;
-        background-color: #0065FC;
-        border-radius: 0px 15px 15px 0px;
-    }
-    .boxSearch3MobileIcon {
-        color: #FFFFFF;
-        display: flex;
-        margin-top: 16px;
-        margin-left: 16px;
     }
     .filterTittle {
         width: 100%;
