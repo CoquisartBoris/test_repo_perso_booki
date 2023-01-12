@@ -179,7 +179,7 @@ input:focus {
 /* div les plus populaires*/
 .backgroundHeb {
     background: #F2F2F2;
-    Width: 100%;
+    Width: 65%;
     min-width: 350px;
     border-radius: 20px;
 }
@@ -252,6 +252,7 @@ input:focus {
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2.5%;
     border: 5px solid #FFFFFF;
 }
 /* definition placement et taille des hébergements à Marseille */
@@ -403,12 +404,6 @@ input:focus {
         display: flex;
         justify-content: flex-start;
     }
-    h1 {
-        margin-left: 7%;
-    }
-    h3 {
-        margin-left: 7%;
-    }
     .mobileAct {
         display: flex;
         justify-content: center;
@@ -432,7 +427,6 @@ input:focus {
     .boxSearch {
         display: flex;
         justify-content:center;
-        align-items: center;
     }
     .testheb {
         display: flex;
@@ -447,6 +441,9 @@ input:focus {
     .titrePlusPopulaires {
         display: flex;
         flex-direction: row;
+    }
+    .backgroundHeb {
+        background:#FFFFFF;
     }
     .boxHeb {
         height: 100%;
@@ -471,9 +468,6 @@ input:focus {
         min-width: 120px;
         font-size: 11px;
     }
-    .filterTittle {
-        margin-right: 0;
-    }
     .flexStartFooter {
         display: flex;
         justify-content: flex-start;
@@ -485,11 +479,11 @@ input:focus {
 }
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    .filterTittle {
-        margin: auto;
-    }
     .borderFilter {
         margin: auto;
+    }
+    .backgroundHeb {
+        width: 100%;
     }
     .boxHeb {
         margin-bottom: 5%;
