@@ -34,8 +34,12 @@ body {
 .sizeLiens {
     width: 25%;
 }
-.animLiens:hover {
+.animLiens {
     padding-top: 47px;
+    padding-bottom: 47px;
+    border-top: 2px solid #FFFFFF;
+}
+.animLiens:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
 }
@@ -43,8 +47,6 @@ body {
 .logoBooki {
     width: 61.09px;
     height: 19px;
-    margin-top: 44px;
-    padding-bottom: 50px;
 }
 /* placement + taille titre */
 h1 {
@@ -122,6 +124,7 @@ h5 {
 /* barre de recherche */
 /* placement barre de recherche */
 .boxSearchIcon {
+    padding-left: 3px;
     width: 14px;
     height: 18px;
 }
@@ -179,12 +182,12 @@ input:focus {
 /* div les plus populaires*/
 .backgroundHeb {
     background: #F2F2F2;
-    Width: 65%;
-    min-width: 350px;
+    Width: 72.5%;
     border-radius: 20px;
 }
 .titreHebMarseille {
     padding-left: 2.5%;
+    padding-top: 1.2%;
 }
 .boxPop {
     border-radius: 20px;
@@ -197,6 +200,7 @@ input:focus {
     width: 100%;
     height: 124px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 /* titre les plus populaires */
 .titrePlusPopulaires {
@@ -213,6 +217,9 @@ input:focus {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
+    border: 5px solid #FFFFFF;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .tittlePopArticles {
     display: flex;
@@ -224,11 +231,11 @@ input:focus {
 }
 /* définition forme images les plus populaires*/
 .sizePictPop {
-    width: 120px;
-    height: 135px;
-    border: 5px solid #FFFFFF;
+    width: 50%;
+    height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit: cover;
 }
 .sousTitresPop {
     display: flex;
@@ -240,12 +247,10 @@ input:focus {
     margin-bottom: 0px;
 }
 .prixNuitPop {
-    margin-top: 0px;
     display: flex;
     flex-wrap: wrap;
     margin-left: 2.5%;
     padding-right: 15%;
-    margin-bottom: 27.5%;
 }
 /* les 6 hébergements*/
 .hebergementsBox {
@@ -260,8 +265,6 @@ input:focus {
 }
 /* definition placement et taille des hébergements à Marseille */
 .sousTitresHebergements {
-    display: flex;
-    justify-content: baseline;
     margin-top: auto;
     padding-left: 5%;
 }
@@ -274,7 +277,11 @@ input:focus {
 }
 /* placements logo étoiles */
 .cardTextPop {
-    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .starIconDisplayHeb {
     display: flex;
@@ -307,33 +314,33 @@ input:focus {
 }
 .sizeBoxAct {
     height: 389px;
-    width: 100%;
+    width: 22.5%;
 }
-.sizePictAct {
+.imgActs {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    height: 100%;
-    width: 90%;
+    height: 90%;
+    width: 100%;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .imgVieuxPort { 
-    background: url(./images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-image: url(./images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg); 
 }
 .imgPomegues {
-    background: url(./images/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-image: url(./images/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
 }
 .imgCalanques {
-    background: url(./images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-image: url(./images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
 }
 .imgNotreDame {
-    background: url(./images/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-image: url(./images/florian-wehde-xW9e8gdotxI-unsplash.jpg);
 }
 /* défini taille + forme sous titres photos activités + box*/
 .sizeTittlesAct {
     background-color: white;
-    width: 85%;
-    height: 35px;
+    height: 10%;
     margin-top: 0;
     margin-left: 0;
     padding-top: 20px;
@@ -342,13 +349,12 @@ input:focus {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    
 }
 /* placement + taille + background footer */
 .sizeFooter {
     background: #F2F2F2;
     height: auto;
-    margin-top: 150px;
+    margin-top: 10%;
 }
 /* taille + couleur titres du Footer */
 .tittleFooter a {
@@ -367,7 +373,7 @@ input:focus {
 }
 .testheb {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 /* mobile */
@@ -375,10 +381,15 @@ input:focus {
     .sizeLiens {
         margin-bottom: 7.5%;
     }
+    .animLiens {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 25px;
+    }
     .animLiens:hover {
         border-top: none;
         border-bottom: 2px solid #0065FC;
-        padding-bottom: 10px;
     }
     .boxSearch3 span{
         display: none;
@@ -412,12 +423,11 @@ input:focus {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        max-width: auto;
     }
     .sizeBoxAct {
-        margin-bottom: 100px;
+        margin: 10% 0px 10% 0px;
         height: 200px;
-        max-width: 80%;
+        width: 95%;
     }
     .sizeFooter {
         height: auto;
@@ -432,6 +442,7 @@ input:focus {
         justify-content: space-around;
         align-items: center;
         flex-wrap:wrap-reverse;
+        margin-bottom: 25%;
     }
     .boxPop {
         width: 100%;
@@ -446,6 +457,7 @@ input:focus {
     }
     .backgroundHeb {
         background:#FFFFFF;
+        width: 100%;
     }
     .boxHeb {
         height: 100%;
@@ -454,8 +466,7 @@ input:focus {
     .hebergementsBox {
         margin-bottom: 10px;
         box-shadow: 3px 2px 2px  #F2F2F2;
-        width: 100%;
-        max-width: 390px;
+        width: 95%;
     }
     .boxFiltres {
         display: flex;
@@ -480,12 +491,15 @@ input:focus {
 }
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        width: 95%;
+    }
     .borderFilter {
         margin: auto;
     }
     .backgroundHeb {
-        width: 95%;
         margin-bottom: 2.5%;
+        width: 100%;
     }
     .boxHeb {
         margin-bottom: 5%;
@@ -494,7 +508,6 @@ input:focus {
         display: flex;
         align-items: center;
         margin: auto;
-        width: 95%;
         height: 280px;
         flex-direction: row;
         flex-wrap: wrap;
@@ -508,24 +521,27 @@ input:focus {
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        margin-right: 0;
     }
     .popArticlesBox {
-        height: 144px;
-        width: 252px;
+        height: 200px;
+        width: 30%;
     }
     .sizeBoxAct {
         height: 267px;
-        width: 182px;
     }
     .sizeTittlesAct {
-        width: 85%;
+        
         padding-bottom: 10px;
     }
 }
-
 @media screen and (min-width: 767px) {
     .boxSearch3 i {
         display: none;
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1470px) {
+    body {
+        margin: auto;
+        width: 95%;
     }
 }
