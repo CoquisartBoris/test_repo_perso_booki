@@ -54,6 +54,11 @@ h1 {
     font-size: 22px;
     line-height: 26px;
 }
+h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
 /* placement + taille sous-titre*/
 h3 {
     font-weight: 400;
@@ -112,7 +117,6 @@ h5 {
     height: 20px;
     border: 2px solid  #F2F2F2;
     border-radius: 25px;
-    margin-bottom: 10px;
 }
 .infoSize {
     margin-left: 7px;
@@ -182,7 +186,7 @@ input:focus {
 /* div les plus populaires*/
 .backgroundHeb {
     background: #F2F2F2;
-    Width: 72.5%;
+    Width: 65%;
     border-radius: 20px;
 }
 .titreHebMarseille {
@@ -240,17 +244,16 @@ input:focus {
 .sousTitresPop {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 2.5%;
+    padding-left: 5%;
     padding-right: 25px;
-    margin-top: 5%;
+    margin-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
 .prixNuitPop {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 2.5%;
-    padding-right: 15%;
+    padding-left: 5%;
 }
 /* les 6 hébergements*/
 .hebergementsBox {
@@ -292,6 +295,7 @@ input:focus {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-left: 5%;
 }
 /* taille + couleurs logo étoiles*/
 .starIconStyle {
@@ -378,6 +382,9 @@ input:focus {
 
 /* mobile */
 @media screen and (max-width: 767px) {
+    .displayMobile {
+        padding-left: 2.5%;
+    }
     .sizeLiens {
         margin-bottom: 7.5%;
     }
@@ -414,10 +421,14 @@ input:focus {
     .filterTittle {
         width: 100%;
         margin-bottom: 20px;
+        padding-left: 2.5%;
     }
     .boxFiltres {
         display: flex;
         justify-content: flex-start;
+    }
+    .infoIcon {
+        padding-left: 2.5%;
     }
     .mobileAct {
         display: flex;
