@@ -12,67 +12,62 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav>
-            <div class="flexBetween">
-                <div><img class="logoBooki" src="./images/Booki.png" alt="logo"></div>
-                <div class="flexAround sizeLiens">
-                    <a class="animLiens" href="#anchor-heb">Hébergements</a>
-                    <a class="animLiens" href="#anchor-act">Activités</a>
-                </div>
-            </div>
+        <nav class="flexBetween">
+            <img class="logoBooki" src="./images/Booki.png" alt="logo">
+            <ul class="flexAround sizeLiens">
+                <li class="animLiens"><a href="#anchor-heb">Hébergements</a></li>
+                <li class="animLiens"><a href="#anchor-act">Activités</a></li>
+            </ul>
         </nav>
         <h1 class="displayMobile">Trouvez votre hébergement pour des vacances de rêve</h1>
         <h3 class="displayMobile">En plein centre-ville ou en pleine nature</h3>
     </header>
     <main>
         <!-- Barre de recherche -->
-        <div class="boxSearch">
-            <div class="boxSearch1"><i class="fa-solid fa-location-dot boxSearchIcon"></i></div>
-            <div class="boxSearch2"><input type="search" placeholder="   Marseille, France"></div>
-            <div class="boxSearch3"><span>Rechercher</span><i class="fa-solid fa-magnifying-glass"></i></div>
-        </div>
+        <form class="boxSearch">
+            <label class="boxSearch1"><i class="fa-solid fa-location-dot boxSearchIcon"></i></label>
+            <input type="search" class="boxSearch2" placeholder="   Marseille, France">
+            <button class="boxSearch3"><span>Rechercher</span><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
         <!-- partie filtres -->
-        <div class="boxFiltres">
-            <div class="filterTittle">
+        <ul class="boxFiltres">
+            <li class="filterTittle">
                 <a href="#">Filtres</a>
-            </div>
-            <div class="borderFilter">
+            </li>
+            <li class="borderFilter">
                 <i class="fa-solid fa-money-bill-wave logoFiltre"></i><a href="#">Economique</a>
-            </div>
-            <div class="borderFilter">
+            </li>
+            <li class="borderFilter">
                 <i class="fa-solid fa-person logoFiltre"></i><a href="#">Familial</a>
-            </div>
-            <div class="borderFilter">
+            </li>
+            <li class="borderFilter">
                 <i class="fa-solid fa-heart logoFiltre"></i><a href="#">Romantique</a>
-            </div>
-            <div class="borderFilter">
+            </li>
+            <li class="borderFilter">
                 <i class="fa-solid fa-dog logoFiltre"></i><a href="#">Animaux autorisés</a>
-            </div>
-        </div>
-        <div class="infoIcon">
-            <div class="parentIcon"><i class="fa-solid fa-info infoSize"></i></div>
-            <h3 class="nbrLogements">Plus de 500 logements sont disponibles dans cette ville</h3>
-        </div>
+            </li>
+        </ul>
+            <h3 class="nbrLogements infoIcon">
+                <i class="fa-solid fa-info infoSize parentIcon"></i>Plus de 500 logements sont disponibles dans cette ville
+            </h3>
         <!-- partie hébergement à Marseille + Les plus populaires -->
-        <div class="allHebs"><!--div qui englobe hebergements Marseille + les plus populaires -->
+        <section class="allHebs"><!--div qui englobe hebergements Marseille + les plus populaires -->
             <section class="backgroundHeb">
                 <h2 id="anchor-heb" class="titreHebMarseille"><a href="#">Hébergements à Marseille</a></h2>
-            <div class="boxHeb"><!-- div hébergement -->
+            <ul class="boxHeb flexBetween"><!-- div hébergement -->
                 
-                <div class="hebergementsBox">
-                    <div><img class="sizePictHeb" src="./images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière"></div>
-                    <div>
-                        <h4 class="sousTitresHebergements"><a href="#">Auberge La Canebière</a></h4>
-                        <h5 class="prixHebergements"><a href="#">Nuit à partir de 25€</a></h5>
-                        <div class="starIconDisplayHeb">
-                            <i class="fa-solid fa-star starIconStyle"></i>
-                            <i class="fa-solid fa-star starIconStyle"></i>
-                            <i class="fa-solid fa-star starIconStyle"></i>
-                            <i class="fa-solid fa-star starIconStyle"></i>
-                            <i class="fa-solid fa-star starIconStyleGrey"></i>
-                        </div>
-                    </div>
-                </div>
+                <li class="hebergementsBox">
+                    <img class="sizePictHeb" src="./images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
+                    <h4 class="sousTitresHebergements"><a href="#">Auberge La Canebière</a></h4>
+                    <h5 class="prixHebergements"><a href="#">Nuit à partir de 25€</a></h5>
+                    <ul class="starIconDisplayHeb">
+                        <li><i class="fa-solid fa-star starIconStyle"></i></li>
+                        <li><i class="fa-solid fa-star starIconStyle"></i></li>
+                        <li><i class="fa-solid fa-star starIconStyle"></i></li>
+                        <li><i class="fa-solid fa-star starIconStyle"></i></li>
+                        <li><i class="fa-solid fa-star starIconStyleGrey"></i></li>
+                    </ul>
+                    </li>
                 <div class="hebergementsBox">
                     <div><img class="sizePictHeb" src="./images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du Port"></div>
                     <div>
@@ -144,88 +139,91 @@
                     </div>
                 </div>
                 
-            </div>
+            </ul>
             <p class="hebAfficherPlus"><a href="#">Afficher plus</a></p>
         </section>
             <section class="boxPop">
             <!-- les plus populaires -->
                 <h2 class="titrePlusPopulaires flexBetween"><a href="#">Les plus populaires</a><i class="fa-solid fa-chart-line logoPlusPop"></i></h2>
-                <div class="popArticlesBox tittlePopArticles">
+                <ul class="testpop">
+                <li class="popArticlesBox tittlePopArticles">
                     <img class="sizePictPop" src="./images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hotel le soleil du matin">
-                        <div class="cardTextPop">
-                            <h4 class="sousTitresPop"><a href="#">Hotel le soleil du matin</a></h4>
-                            <h5 class="prixNuitPop"><a href="#">Nuit à partir de 128€</a></h5>
-                            <div class="starIconDisplayPop">
-                                <i class="fa-solid fa-star starIconStyle"></i>
-                                <i class="fa-solid fa-star starIconStyle"></i>
-                                <i class="fa-solid fa-star starIconStyle"></i>
-                                <i class="fa-solid fa-star starIconStyle"></i>
-                                <i class="fa-solid fa-star starIconStyleGrey"></i>
-                            </div>
-                        </div>
-                </div>
-                <div class="popArticlesBox tittlePopArticles">
+                    <div class="cardTextPop">
+                        <h4 class="sousTitresPop"><a href="#">Hotel le soleil du matin</a></h4>
+                        <h5 class="prixNuitPop"><a href="#">Nuit à partir de 128€</a></h5>
+                        <ul class="starIconDisplayPop">
+                            <li><i class="fa-solid fa-star starIconStyle"></i></li>
+                            <li><i class="fa-solid fa-star starIconStyle"></i></li>
+                            <i class="fa-solid fa-star starIconStyle"></i>
+                            <i class="fa-solid fa-star starIconStyle"></i>
+                            <i class="fa-solid fa-star starIconStyleGrey"></i>
+                        </ul>
+                    </div>
+                </li>
+                <li class="popArticlesBox tittlePopArticles">
                     <img class="sizePictPop" src="./images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre d'hote au copeur de l'eau">
-                        <div class="cardTextPop">
-                            <h4 class="sousTitresPop"><a href="#">Hotel Au cœur de l'eau</a></h4>
-                            <h5 class="prixNuitPop"><a href="#">Nuit à partir de 71€</a></h5>
-                            <div class="starIconDisplayPop">
-                                <i class="fa-solid fa-star starIconStyle"></i>
-                                <i class="fa-solid fa-star starIconStyle"></i>
-                                <i class="fa-solid fa-star starIconStyle"></i>
-                                <i class="fa-solid fa-star starIconStyle"></i>
-                                <i class="fa-solid fa-star starIconStyleGrey"></i>
-                            </div>
+                    <div class="cardTextPop">
+                        <h4 class="sousTitresPop"><a href="#">Hotel Au cœur de l'eau</a></h4>
+                        <h5 class="prixNuitPop"><a href="#">Nuit à partir de 71€</a></h5>
+                        <div class="starIconDisplayPop">
+                            <i class="fa-solid fa-star starIconStyle"></i>
+                            <i class="fa-solid fa-star starIconStyle"></i>
+                            <i class="fa-solid fa-star starIconStyle"></i>
+                            <i class="fa-solid fa-star starIconStyle"></i>
+                            <i class="fa-solid fa-star starIconStyleGrey"></i>
                         </div>
-                </div>
-                <div class="popArticlesBox tittlePopArticles">
+                    </div>
+                </li>
+                <li class="popArticlesBox tittlePopArticles">
                     <img class="sizePictPop" src="./images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hotel Bleu et Blanc">
-                        <div class="cardTextPop">
-                            <h4 class="sousTitresPop"><a href="#">Hôtel Bleu et Blanc</a></h4>
-                            <h5 class="prixNuitPop"><a href="#">Nuit à partir de 68€</a></h5>
-                            <div class="starIconDisplayPop">
-                                <i class="fa-solid fa-star starIconStyle"></i>
-                                <i class="fa-solid fa-star starIconStyle"></i>
-                                <i class="fa-solid fa-star starIconStyle"></i>
-                                <i class="fa-solid fa-star starIconStyle"></i>
-                                <i class="fa-solid fa-star starIconStyleGrey"></i>
-                            </div>
+                    <div class="cardTextPop">
+                        <h4 class="sousTitresPop"><a href="#">Hôtel Bleu et Blanc</a></h4>
+                        <h5 class="prixNuitPop"><a href="#">Nuit à partir de 68€</a></h5>
+                        <div class="starIconDisplayPop">
+                            <i class="fa-solid fa-star starIconStyle"></i>
+                            <i class="fa-solid fa-star starIconStyle"></i>
+                            <i class="fa-solid fa-star starIconStyle"></i>
+                            <i class="fa-solid fa-star starIconStyle"></i>
+                            <i class="fa-solid fa-star starIconStyleGrey"></i>
                         </div>
-                </div>
+                    </div>
+                </li>
+            </ul>
         </section>
-        </div>
+    </section>
         <!-- partie titre activité a marseille + photos + lieux-->
         <article>
         <h2 class="titreHebMarseille" id="anchor-act"><a href="#">Activités à Marseille</a></h2>
-        <div class="flexBetween mobileAct">
-                <div class="sizeBoxAct">
+        <ul class="flexBetween mobileAct">
+                <li class="sizeBoxAct">
                     <img class="imgActs" src="./images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux-Port">
                     <h4 class="sizeTittlesAct"><a href="#">Vieux-Port</a></h4>
-                </div>
-            <div class="sizeBoxAct">
+                </li>
+            <li class="sizeBoxAct">
                 <img class="imgActs" src="./images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                 <h4 class="sizeTittlesAct"><a href="#">Fort de Pomègues</a></h4>
-            </div>
-            <div class="sizeBoxAct">
+            </li>
+            <li class="sizeBoxAct">
                 <img class="imgActs" src="./images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
                 <h4 class="sizeTittlesAct"><a href="#">Parc national des Calanques</a></h4>
-            </div>
-            <div class="sizeBoxAct">
+            </li>
+            <li class="sizeBoxAct">
                 <img class="imgActs" src="./images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                 <h4 class="sizeTittlesAct"><a href="#">Notre-Dame-de-la-Garde</a></h4>
-            </div>
-        </div>
+            </li>
+        </ul>
     </article>
     </main>
     <!-- Footer -->
     <footer>
-        <div class="sizeFooter flexStartFooter">
-            <ul>
-                <li class="tittleFooter"><a href="#">A propos</a></li>
-                <li class="subtittleFooter"><a href="#">Fonctionnement du site</a></li>
-                <li class="subtittleFooter"><a href="#">Conditions générales</a></li>
-                <li class="subtittleFooter"><a href="#">Données et condifentialité</a></li>
-            </ul>
+        <ul class="sizeFooter flexStartFooter">
+            <li><h3  class="tittleFooter"><a href="#">A propos</a></h3>
+                <ul>
+                    <li class="subtittleFooter"><a href="#">Fonctionnement du site</a></li>
+                    <li class="subtittleFooter"><a href="#">Conditions générales</a></li>
+                    <li class="subtittleFooter"><a href="#">Données et condifentialité</a></li>
+                </ul>
+            </li>
             <ul>
                 <li class="tittleFooter"><a href="#">Nos hébergements</a></li>
                 <li class="subtittleFooter"><a href="#">Charte qualité</a></li>
@@ -236,7 +234,7 @@
                 <li class="subtittleFooter"><a href="#">Centre d'aide</a></li>
                 <li class="subtittleFooter"><a href="#">Nous contacter</a></li>
             </ul>
-        </div>
+        </ul>
     </footer>
 </body>
 </html>
