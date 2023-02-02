@@ -394,11 +394,16 @@ input:focus {
     .backgroundHeb {
         margin-bottom: 2.5%;
         width: 100%;
+        margin-right: 0;
+    }
+    .testpop {
+        flex-direction: row;
     }
     .boxHeb {
         margin-bottom: 5%;
     }
     .boxPop {
+        width: 100%;
         display: flex;
         align-items: center;
         margin: auto;
@@ -516,6 +521,9 @@ input:focus {
         width: 100%;
         border-radius: 0px 0px 0px 0px;
     }
+    .testpop {
+        flex-direction: column;
+    }
     .popArticlesBox {
         margin-bottom: 2.5%;
     }
@@ -556,5 +564,12 @@ input:focus {
     .flexStartFooter {
         flex-direction: column;
         align-items: flex-start;
+    }
+    .tittleFooter{
+        padding-left: 5%;
+        width: 100%;
+    }
+    .subtittleFooter{
+        padding-left: 5%;
     }
 }
