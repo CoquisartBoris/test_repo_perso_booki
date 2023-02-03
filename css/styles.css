@@ -84,25 +84,6 @@ h2 {
     font-size: 22px;
     line-height: 26px;
 }
-/*
-h3 {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-}
-*/
-/*
-h4 {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-}
-*/
-h5 {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-}
 /* filtres display*/
 .boxFiltres {
     display: flex;
